@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.pubnub.braindrain"
+        minSdkVersion 21
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+
+
+    provided "org.projectlombok:lombok:1.12.6"
+
+    apt "org.projectlombok:lombok:1.12.6"
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+
+
+
+
+
+
+
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:leanback-v17:24.1.1'
+
+
+
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:leanback-v17:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.github.bumptech.glide:glide:3.4.+'
+    compile 'com.pubnub:pubnub:4.0.7'
+    compile 'com.google.firebase:firebase-core:9.2.1'
+    compile 'com.google.firebase:firebase-config:9.2.1'
+    compile 'com.google.firebase:firebase-database:9.2.1'
+    compile 'com.google.firebase:firebase-auth:9.2.1'
+    compile 'com.github.alorma:github-sdk:3.2.5'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'org.projectlombok:lombok:1.16.10'
+    compile 'org.slf4j:slf4j-android:1.7.21'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'io.reactivex:rxjava:1.0.10'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+}

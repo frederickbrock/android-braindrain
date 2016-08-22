@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "361816999468",
+    "firebase_url": "https://collaborationcanvas.firebaseio.com",
+    "project_id": "collaborationcanvas",
+    "storage_bucket": "collaborationcanvas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361816999468:android:26cb9178f1d08460",
+        "android_client_info": {
+          "package_name": "com.pubnub.virtualboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361816999468-co5ab031on52hbr46rmahi4jnuovo1bl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pubnub.virtualboard",
+            "certificate_hash": "6A6F9867AA7B1424A7D9D31F3AC2972B1A9F3654"
+          }
+        },
+        {
+          "client_id": "361816999468-iedoattsjq5uib142h2ugougm85pg26b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaoyWiiHbGqlIUQfsNyO3yZhsj-LzZA0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361816999468-iedoattsjq5uib142h2ugougm85pg26b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
