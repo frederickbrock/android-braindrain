@@ -1,1 +1,1 @@
-include ':braindrain-caster', ':braindrain-client'
+include ':braindrain-client'

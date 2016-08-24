@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/braindrain-caster/app.iml" filepath="$PROJECT_DIR$/braindrain-caster/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/braindrain-client/braindrain.iml" filepath="$PROJECT_DIR$/braindrain-client/braindrain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/braindrain-caster/braindrain-caster.iml" filepath="$PROJECT_DIR$/braindrain-caster/braindrain-caster.iml" />
       <module fileurl="file://$PROJECT_DIR$/braindrain-client/braindrain-client.iml" filepath="$PROJECT_DIR$/braindrain-client/braindrain-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/canvaspresenter.iml" filepath="$PROJECT_DIR$/canvaspresenter.iml" />
     </modules>

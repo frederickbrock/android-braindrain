@@ -45,31 +45,14 @@ public class CollaborationManager {
 
     private static CollaborationManager instance;
 
-    private CollaborationManager(FirebaseDatabase firebaseDatabase){
-        this.firebaseDatabase = firebaseDatabase;
-
-    }
-
-    public void castBoard(String name) {
-        DatabaseReference boards = firebaseDatabase.getReference();
-        boards.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                Iterable<DataSnapshot> snapShot = dataSnapshot.getChildren();
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
+    private CollaborationManager(){
     }
 
 
 
     public static CollaborationManager getInstance(){
         if(null == instance) {
-            instance = new CollaborationManager(firebaseDatabase);
+            instance = new CollaborationManager();
             instance.initAuthListener();
         }
 
@@ -85,7 +68,7 @@ public class CollaborationManager {
                     if((u != null) && (mCurrentUser == null)){
                         mCurrentUser = u;
                         initPubNub(); //After we have a user initPubNub
-                        initFirebaseDatabase();
+                        initFirebase();
                     }
                 }
             });
@@ -133,7 +116,7 @@ public class CollaborationManager {
         });
     }
 
-    public void initFirebaseDatabase(){
+    public void initFirebase(){
         firebaseDatabase = FirebaseDatabase.getInstance();
     }
 

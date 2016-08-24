@@ -14,7 +14,6 @@ import com.pubnub.braindrain.R;
 
 public class CollaborationCanvasView extends View {
 
-    private String mExampleString = "Sample Text";
     private int mExampleColor = Color.RED;
     private float mExampleDimension = 0;
     private TextPaint mTextPaint;
@@ -42,16 +41,7 @@ public class CollaborationCanvasView extends View {
         final TypedArray a = getContext().obtainStyledAttributes(
                 attrs, R.styleable.CollaborationCanvasView, defStyle, 0);
 
-        mExampleString = a.getString(
-                R.styleable.CollaborationCanvasView_exampleString);
-        mExampleColor = a.getColor(
-                R.styleable.CollaborationCanvasView_exampleColor,
-                mExampleColor);
-        // Use getDimensionPixelSize or getDimensionPixelOffset when dealing with
-        // values that should fall on pixel boundaries.
-        mExampleDimension = a.getDimension(
-                R.styleable.CollaborationCanvasView_exampleDimension,
-                mExampleDimension);
+
 
 
         a.recycle();
@@ -68,7 +58,7 @@ public class CollaborationCanvasView extends View {
     private void invalidateTextPaintAndMeasurements() {
         mTextPaint.setTextSize(mExampleDimension);
         mTextPaint.setColor(mExampleColor);
-        mTextWidth = mTextPaint.measureText(mExampleString);
+        //mTextWidth = mTextPaint.measureText("");
 
         Paint.FontMetrics fontMetrics = mTextPaint.getFontMetrics();
         mTextHeight = fontMetrics.bottom;
@@ -97,25 +87,7 @@ public class CollaborationCanvasView extends View {
 
     }
 
-    /**
-     * Gets the example string attribute value.
-     *
-     * @return The example string attribute value.
-     */
-    public String getExampleString() {
-        return mExampleString;
-    }
 
-    /**
-     * Sets the view's example string attribute value. In the example view, this string
-     * is the text to draw.
-     *
-     * @param exampleString The example string attribute value to use.
-     */
-    public void setExampleString(String exampleString) {
-        mExampleString = exampleString;
-        invalidateTextPaintAndMeasurements();
-    }
 
     /**
      * Gets the example color attribute value.

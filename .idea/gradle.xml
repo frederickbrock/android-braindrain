@@ -9,14 +9,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/braindrain-caster" />
             <option value="$PROJECT_DIR$/braindrain-client" />
           </set>
         </option>
         <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/braindrain-caster" />
             <option value="$PROJECT_DIR$/braindrain-client" />
           </set>
         </option>
